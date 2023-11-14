@@ -1,0 +1,134 @@
+@keyframes animateWords {
+    0% {/* initial position */
+        transform: translateY(0%);
+    }
+    25% {/* move down 1 screen height */
+        transform: translateY(-100%);
+    }
+    50% {/* move down 2 screen heights */
+        transform: translateY(-200%);
+    }
+    75% {/* move down 3 screen heights */
+        transform: translateY(-300%);
+    }
+    100% {/* move up 4 screen heights */
+        transform: translateY(-400%);
+    }
+}
+h1 {
+    /* Increase font size to 3em */
+    font-size: 1.1em; }
+    /* target h1 with span children */
+    h1 > span {
+        /* set relative position for nested span */
+        position: relative ;
+         /* treat span as block */
+        display: block ;
+        /* apply custom color */
+        color: #1e40af;
+         /* set fixed height */
+        height: 1.25em ;
+        /* vertically align span at bottom */
+        /* vertical-align: bottom ; */
+        /* hide any overflow content */
+        overflow: hidden ;
+     } 
+     h1 > span > span {
+            display: block; /* Display words as block */
+            animation: /* Animate words, 5s duration, infinite loop, ease transition */
+            animateWords 5s infinite ease;
+        }
+   
+        /* Center content on page */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    
+}
+
+/* Responsive for Large Laptop - Desktop */
+@media screen and (min-width: 990px) and (max-width: 1200px){
+    body{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    }
+
+    h1 {
+        /* Increase font size to 3em */
+        font-size: 2em; }
+        /* target h1 with span children */
+    h1 > span {
+            /* set relative position for nested span */
+            position: relative ;
+            /* treat span as inline-block */
+            display: inline-block ;
+            color: #86198f;
+            /* set fixed height */
+            height: 1.25em ;
+            /* vertically align span at bottom */
+            vertical-align: bottom ;
+            /* hide any overflow content */
+            overflow: hidden ;
+        }
+       
+        h1 > span > span {
+            display: block; /* Display words as block */
+            animation: /* Animate words, 5s duration, infinite loop, ease transition */
+            animateWords 5s infinite ease;
+        }
+}
+
+/* Responsive Larger Destop Monitor */
+@media screen and (min-width: 1200px) {
+    body{
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    }
+
+    h1 {
+        /* Increase font size to 3em */
+        font-size: 2.5em; }
+
+    /* target h1 with span children */
+    h1 > span {
+        /* set relative position for nested span */
+        position: relative ;
+        /* treat span as inline-block */
+        display: inline-block ;
+        color: #217c25;
+        /* set fixed height */
+        height: 1.25em ;
+        /* vertically align span at bottom */
+        vertical-align: bottom ;
+        /* hide any overflow content */
+        overflow: hidden ;
+    }
+
+    h1 > span > span {
+        display: block; /* Display words as block */
+        animation: /* Animate words, 5s duration, infinite loop, ease transition */
+        animateWords 5s infinite ease;
+    }
+}

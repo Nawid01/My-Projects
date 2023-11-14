@@ -15,6 +15,23 @@
         transform: translateY(-400%);
     }
 }
+
+/* Center content on page */
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+background-color: #202020;
+color: white;
+font-family: 'Geologica', sans-serif;
+
+}
+
+
+
 h1 {
     /* Increase font size to 3em */
     font-size: 1.1em; }
@@ -39,19 +56,6 @@ h1 {
             animateWords 5s infinite ease;
         }
    
-        /* Center content on page */
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #202020;
-    color: white;
-    font-family: 'Geologica', sans-serif;
-    
-}
 
 /* Responsive for Large Laptop - Desktop */
 @media screen and (min-width: 990px) and (max-width: 1200px){
